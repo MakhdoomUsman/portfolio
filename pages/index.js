@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,48 +11,61 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="flex">
+        <div className="relative bg-black w-[50%] custom-shape h-screen overflow-hidden">
+          {/* <p className="text-3xl mx-[120px] text-[#F2A5B4] mt-10 tracking-tighter">
+            Mehran Shiraz
+          </p> */}
+          <img
+            src="/portfolio/Group 50.svg"
+            alt="image"
+            className="mx-[120px] mt-10 "
+          />
+          <img
+            src="/portfolio/image1.svg"
+            alt="image"
+            className="max-h-full mx-[120px] "
+          />
+          <div className="flex absolute bottom-16 left-[15%]">
+            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center mx-2">
+              <img src="/Vector (3).png" alt="image" className="w-2" />
+            </div>
+            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center">
+              <img src="/Vector (4).png" alt="image" className="w-3" />
+            </div>
+            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center mx-2">
+              <img src="/Vector (5).png" alt="image" className="w-3" />
+            </div>
+            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center">
+              <img src="/Vector (6).png" alt="image" className="w-2" />
+            </div>
+          </div>
         </div>
-      </main>
+        <div className="bg-white w-[50%] flex items-center">
+          <div className="w-[380px] mx-[50px]">
+            <p className="font-medium text-[#FF0000] text-xl tracking-widest my-3">
+              Hello I’m
+            </p>
+            <h1 className=" text-4xl font-bold">Mehran Shiraz</h1>
+            <h3 className="font-medium text-base text-[#333232] uppercase my-5">
+              Sr.Full Stack Developer
+            </h3>
+            <p className="font-medium text-base text-[#333232]">
+              Grounded and solution-oriented Web Developer with a wide variety
+              of professional experience and highly skilled with a strong
+              groundwork in programming.Solid track record of architecting
+              solutions that exceed clients expectations.
+            </p>
+            <Link href={"/portfolio"}>
+              <button className="mt-5 bg-black text-[#FF0000] font-bold px-3 py-2 text-lg rounded-xl">
+                Hire Me
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -63,7 +76,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
-  )
+  );
 }
