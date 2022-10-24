@@ -7,10 +7,10 @@ const whyme = () => {
     <>
       <Header color="black" />
       <div className=" md:flex h-screen">
-        <div className="relative bg-black custom-shape2 md:w-[50%] w-full md:h-full h-[50%] flex items-center ">
+        <div className="relative bg-black custom-shape2 md:w-[50%] w-full md:h-full h-[60%] flex items-center ">
           <img src="/portfolio/image2.svg" alt="image" className="md:mx-28 mt-44 pl-10" />
         </div>
-        <div className="bg-white  md:w-[50%] md:h-full h-[50%] flex items-center md:justify-start justify-end">
+        <div className="bg-white  md:w-[50%] md:h-full h-[40%] flex md:items-center md:justify-start justify-end">
           <div className="w-[380px] mx-[50px]">
             <p className="font-medium text-[#FF0000] lg:text-xl text-base leading-5 tracking-widest lg:my-3 my-0">
               About Me

@@ -4,7 +4,7 @@
 
 .custom-shape,
 .custom-shape2 {
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 /* .custom-shape2 {
   clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);

@@ -33,20 +33,20 @@ export default function Home() {
 
       <Header color="black" />
       <div className="md:flex h-screen">
-        <div className="relative md:h-full bg-black md:w-[50%] w-full h-[50%] custom-shape overflow-hidden">
+        <div className="relative md:h-full bg-black md:w-[50%] w-full h-[60%] custom-shape overflow-hidden">
           <img
             src="/portfolio/image1.svg"
             alt="image"
             className="lg:mx-28 mx-10 mt-24 lg:w-[55%] w-[65%]"
           />
-          <div className="flex absolute bottom-16 left-[15%]">
-            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center mx-2">
+          <div className="md:flex absolute bottom-16  md:left-[15%] left-7">
+            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center md:mx-2 mx-0 md:my-0 my-2">
               <img src="/Vector (3).png" alt="image" className="w-2" />
             </div>
             <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center">
               <img src="/Vector (4).png" alt="image" className="w-3" />
             </div>
-            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center mx-2">
+            <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center md:mx-2 mx-0 md:my-0 my-2">
               <img src="/Vector (5).png" alt="image" className="w-3" />
             </div>
             <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center">
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white md:w-[50%] w-[100%] md:h-full h-[50%]  flex items-center md:justify-start justify-end">
+        <div className="bg-white md:w-[50%] w-[100%] md:h-full h-[40%]  flex md:items-center md:justify-start justify-end">
           <div className="w-[380px] mx-[50px]">
             <p className="font-medium text-[#FF0000] lg:text-xl text-lg tracking-widest lg:my-3 my-0">
               Hello I’m
