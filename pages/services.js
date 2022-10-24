@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const services = () => {
   const service = [
@@ -36,6 +37,7 @@ const services = () => {
   ];
   return (
     <>
+      <Header />
       <div className="bg-black p-20">
         <div className="flex justify-center">
           <div className="">
@@ -50,10 +52,10 @@ const services = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-10 my-5">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-10 gap-5 my-5">
           {service?.map((data, index) => {
             return (
-              <div className="bg-white rounded-xl p-7">
+              <div className="bg-white rounded-xl md:p-7 sm:p-3 p-5">
                 <img
                   src={data.log}
                   alt=""
@@ -70,9 +72,8 @@ const services = () => {
           })}
         </div>
       </div>
-      <div className="pb-2 bg-black">
-        <Footer />
-      </div>
+
+      <Footer />
     </>
   );
 };

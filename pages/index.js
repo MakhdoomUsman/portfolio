@@ -2,7 +2,27 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 export default function Home() {
+  const Routes = [
+    {
+      Name: "Home",
+      slug: "/",
+    },
+    {
+      Name: "About Us",
+      slug: "/whyme",
+    },
+    {
+      Name: "Services",
+      slug: "/services",
+    },
+    {
+      Name: "Portfolio",
+      slug: "/portfolio",
+    },
+  ];
   return (
     <div className={styles.container}>
       <Head>
@@ -11,20 +31,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex">
-        <div className="relative bg-black w-[50%] custom-shape h-screen overflow-hidden">
-          {/* <p className="text-3xl mx-[120px] text-[#F2A5B4] mt-10 tracking-tighter">
-            Mehran Shiraz
-          </p> */}
-          <img
-            src="/portfolio/Group 50.svg"
-            alt="image"
-            className="mx-[120px] mt-10 "
-          />
+      <Header color="black" />
+      <div className="flex h-screen">
+        <div className="relative md:h-full bg-black md:w-[50%] w-full h-[50%] custom-shape overflow-hidden">
           <img
             src="/portfolio/image1.svg"
             alt="image"
-            className="max-h-full mx-[120px] "
+            className="lg:mx-28 mx-10 mt-24 lg:w-[55%] w-[65%]"
           />
           <div className="flex absolute bottom-16 left-[15%]">
             <div className="border-2 border-white w-10 h-10 rounded-full flex justify-center items-center mx-2">
@@ -41,42 +54,29 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white w-[50%] flex items-center">
+        <div className="bg-white md:w-[50%] w-[100%] md:h-full h-[50%]  flex items-center">
           <div className="w-[380px] mx-[50px]">
-            <p className="font-medium text-[#FF0000] text-xl tracking-widest my-3">
+            <p className="font-medium text-[#FF0000] lg:text-xl text-lg tracking-widest lg:my-3 my-0">
               Hello I’m
             </p>
-            <h1 className=" text-4xl font-bold">Mehran Shiraz</h1>
-            <h3 className="font-medium text-base text-[#333232] uppercase my-5">
+            <h1 className=" lg:text-4xl text-2xl font-bold">Mehran Shiraz</h1>
+            <h3 className="font-medium text-base text-[#333232] uppercase lg:mt-5 mt-2 mb-1">
               Sr.Full Stack Developer
             </h3>
-            <p className="font-medium text-base text-[#333232]">
+            <p className="font-medium lg:text-base text-sm text-[#333232]">
               Grounded and solution-oriented Web Developer with a wide variety
               of professional experience and highly skilled with a strong
               groundwork in programming.Solid track record of architecting
               solutions that exceed clients expectations.
             </p>
             <Link href={"/portfolio"}>
-              <button className="mt-5 bg-black text-[#FF0000] font-bold px-3 py-2 text-lg rounded-xl">
+              <button className="lg:mt-5 mt-2 bg-black hover:bg-white hover:border-2 hover:border-[#FF0000] text-[#FF0000] font-bold lg:h-14 h-10 w-24 text-lg rounded-xl">
                 Hire Me
               </button>
             </Link>
           </div>
         </div>
       </div>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </div>
   );
 }

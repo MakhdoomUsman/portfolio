@@ -10,6 +10,11 @@ module.exports = {
         popin: ["Poppins"],
       },
     },
+    theme: {
+      screens: {
+        'sm': '420px',
+      },
+    },
   },
   plugins: [],
 };
