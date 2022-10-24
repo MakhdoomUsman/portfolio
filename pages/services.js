@@ -38,7 +38,7 @@ const services = () => {
   return (
     <>
       <Header />
-      <div className="bg-black p-20">
+      <div className="bg-black sm:p-20 pt-20 p-5">
         <div className="flex justify-center">
           <div className="">
             <h1 className=" text-2xl leading-9 font-bold text-white my-1">

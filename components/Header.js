@@ -50,7 +50,7 @@ const Header = ({ color = "white" }) => {
               </Link>
             );
           })}
-          <div className="mobile md:hidden block">
+          <div className="mobile md:hidden block z-10 text-white">
             <span
               className={`cursor-pointer text-xl font-bold  ${
                 actives ? "block" : "hidden"

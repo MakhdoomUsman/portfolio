@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
 
       <Header color="black" />
-      <div className="flex h-screen">
+      <div className="md:flex h-screen">
         <div className="relative md:h-full bg-black md:w-[50%] w-full h-[50%] custom-shape overflow-hidden">
           <img
             src="/portfolio/image1.svg"
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-white md:w-[50%] w-[100%] md:h-full h-[50%]  flex items-center">
+        <div className="bg-white md:w-[50%] w-[100%] md:h-full h-[50%]  flex items-center md:justify-start justify-end">
           <div className="w-[380px] mx-[50px]">
             <p className="font-medium text-[#FF0000] lg:text-xl text-lg tracking-widest lg:my-3 my-0">
               Hello I’m
